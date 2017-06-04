@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="amardhebardevelopments.halo5soundboard.HumanWeaponsActivity">
+
+    <ImageButton
+        android:id="@+id/assaultrifle"
+        android:layout_width="375dp"
+        android:layout_height="147dp"
+        app:srcCompat="@mipmap/assaultrifle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <ImageButton
+        android:id="@+id/battlerifle"
+        android:layout_width="421dp"
+        android:layout_height="164dp"
+        app:srcCompat="@mipmap/battlerifle"
+        android:layout_marginRight="-1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <ImageButton
+        android:id="@+id/dmr"
+        android:layout_width="385dp"
+        android:layout_height="158dp"
+        app:srcCompat="@mipmap/dmr"
+        tools:layout_editor_absoluteY="333dp"
+        android:layout_marginLeft="-1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+
+</android.support.constraint.ConstraintLayout>
