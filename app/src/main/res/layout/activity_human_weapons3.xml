@@ -31,10 +31,31 @@
         android:id="@+id/shotgun"
         android:layout_width="375dp"
         android:layout_height="150dp"
-
         app:srcCompat="@mipmap/shotgun"
         android:layout_below="@+id/railgun"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/page3right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="183dp"
+        android:layout_marginStart="183dp"
+        android:text=">"
+        android:layout_below="@+id/railgun"
+        android:layout_alignLeft="@+id/shotgun"
+        android:layout_alignStart="@+id/shotgun"
+        android:layout_marginTop="152dp" />
+
+    <Button
+        android:id="@+id/page3left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="<"
+        android:layout_marginRight="183dp"
+        android:layout_below="@+id/railgun"
+        android:layout_alignLeft="@+id/shotgun"
+        android:layout_alignStart="@+id/shotgun"
+        android:layout_marginTop="152dp" />
+
 
 </RelativeLayout>
