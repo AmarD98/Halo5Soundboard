@@ -20,7 +20,6 @@
         <activity android:name=".CovenantWeaponsActivity" />
         <activity android:name=".ForerunnerWeaponsActivity" />
         <activity android:name=".HumanWeaponsActivity" />
-        <activity android:name=".MedalsActivity" />
         <activity android:name=".HumanWeaponsActivity2" />
         <activity android:name=".HumanWeaponsActivity3" />
         <activity android:name=".HumanWeaponsActivity4" />

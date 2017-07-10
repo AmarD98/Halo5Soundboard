@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context="amardhebardevelopments.halo5soundboard.CovenantWeaponsActivity">
 
+    <ImageButton
+        android:id="@+id/carbine"
+        android:layout_width="392dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/carbine" />
+
+    <ImageButton
+        android:id="@+id/beamrifle"
+        android:layout_width="387dp"
+        android:layout_height="207dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@mipmap/beamrifle" />
+
+    <ImageButton
+        android:id="@+id/energysword"
+        android:layout_width="390dp"
+        android:layout_height="158dp"
+        android:layout_marginLeft="-3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@mipmap/energysword"
+        tools:layout_editor_absoluteY="348dp" />
 </android.support.constraint.ConstraintLayout>

@@ -1,12 +1,15 @@
 package amardhebardevelopments.halo5soundboard;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class HumanWeaponsActivity2 extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +22,7 @@ public class HumanWeaponsActivity2 extends AppCompatActivity {
         halo2BattleRifle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity2.this, R.raw.H5_Halo2_BR_Fire_FP_1);
+                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity2.this, R.raw.h5_halo2_br_fire_fp_1);
                 mp.start();
             }
         });
@@ -27,7 +30,7 @@ public class HumanWeaponsActivity2 extends AppCompatActivity {
         magnum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity2.this, R.raw.H5_Magnum_1);
+                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity2.this, R.raw.h5_magnum_1);
                 mp.start();
             }
         });
@@ -35,9 +38,31 @@ public class HumanWeaponsActivity2 extends AppCompatActivity {
         smg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity2.this, R.raw.H5_SMG_5);
+                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity2.this, R.raw.h5_smg_5);
                 mp.start();
             }
         });
+
+        Button page2Right = (Button) findViewById(R.id.page2right);
+        page2Right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goRight = new Intent(view.getContext(), HumanWeaponsActivity3.class);
+                startActivity(goRight);
+            }
+        });
+        Button page2Left = (Button) findViewById(R.id.page2left);
+        page2Left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goLeft = new Intent(view.getContext(), HumanWeaponsActivity.class);
+                startActivity(goLeft);
+            }
+        });
+
+
     }
+
 }
+
+

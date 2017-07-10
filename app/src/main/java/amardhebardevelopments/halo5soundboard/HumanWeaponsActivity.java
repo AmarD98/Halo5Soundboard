@@ -1,9 +1,11 @@
 package amardhebardevelopments.halo5soundboard;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class HumanWeaponsActivity extends AppCompatActivity {
@@ -19,7 +21,7 @@ public class HumanWeaponsActivity extends AppCompatActivity {
         assaultRifle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity.this, R.raw.H5_AR_3);
+                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity.this, R.raw.h5_ar_3);
                 mp.start();
             }
         });
@@ -27,7 +29,7 @@ public class HumanWeaponsActivity extends AppCompatActivity {
         battleRifle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity.this, R.raw.H5_BR_1);
+                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity.this, R.raw.h5_br_1);
                 mp.start();
             }
         });
@@ -35,11 +37,22 @@ public class HumanWeaponsActivity extends AppCompatActivity {
         dmr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity.this, R.raw.H5_DMR_2);
+                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity.this, R.raw.h5_dmr_2);
                 mp.start();
+            }
+        });
+
+        Button right = (Button)findViewById(R.id.page1right);
+        right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), HumanWeaponsActivity2.class);
+                startActivity(intent);
             }
         });
 
 
     }
+
+
 }

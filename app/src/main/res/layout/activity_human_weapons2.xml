@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,30 +8,57 @@
 
     <ImageButton
         android:id="@+id/halo2battlerifle"
-        android:layout_width="389dp"
+        android:layout_width="375dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="-21dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/halo2battlerifle" />
+        android:layout_marginTop="26dp"
+        app:srcCompat="@mipmap/halo2battlerifle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:id="@+id/magnum"
-        android:layout_width="385dp"
-        android:layout_height="167dp"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
         app:srcCompat="@mipmap/magnum"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="157dp"
-        android:layout_marginRight="-1dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        android:layout_below="@+id/halo2battlerifle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:id="@+id/smg"
-        android:layout_width="399dp"
-        android:layout_height="181dp"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@mipmap/smg"
         tools:layout_editor_absoluteY="324dp"
-        android:layout_marginRight="-8dp"
-        app:layout_constraintRight_toRightOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_below="@+id/magnum"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/page2right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="183dp"
+        android:layout_marginStart="183dp"
+        android:text=">"
+        android:layout_below="@+id/magnum"
+        android:layout_alignLeft="@+id/smg"
+        android:layout_alignStart="@+id/smg"
+        android:layout_marginTop="152dp" />
+
+    <Button
+        android:id="@+id/page2left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/smg"
+        android:layout_alignStart="@+id/smg"
+        android:layout_below="@+id/magnum"
+        android:layout_marginRight="183dp"
+        android:layout_marginTop="152dp"
+        android:text="<" />
+
+</RelativeLayout>
