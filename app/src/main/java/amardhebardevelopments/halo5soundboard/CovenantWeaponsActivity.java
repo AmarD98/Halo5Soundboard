@@ -1,9 +1,11 @@
 package amardhebardevelopments.halo5soundboard;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class CovenantWeaponsActivity extends AppCompatActivity {
@@ -37,6 +39,15 @@ public class CovenantWeaponsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity.this, R.raw.h5_e_sword_swing_object_impact_3);
                 mp.start();
+            }
+        });
+
+        Button covPage1Right = (Button) findViewById(R.id.covPage1Right);
+        covPage1Right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goRight = new Intent(view.getContext(), CovenantWeaponsActivity2.class);
+                startActivity(goRight);
             }
         });
     }

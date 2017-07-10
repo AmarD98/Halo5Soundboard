@@ -10,31 +10,43 @@
         android:id="@+id/carbine"
         android:layout_width="375dp"
         android:layout_height="150dp"
-        android:layout_marginTop="0dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/carbine" />
+        app:srcCompat="@mipmap/carbine"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:id="@+id/beamrifle"
         android:layout_width="375dp"
         android:layout_height="150dp"
-        android:layout_marginBottom="152dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@mipmap/beamrifle" />
+        app:srcCompat="@mipmap/beamrifle"
+        android:layout_below="@+id/carbine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:id="@+id/energysword"
         android:layout_width="375dp"
+        android:layout_below="@+id/beamrifle"
         android:layout_height="150dp"
-        android:layout_marginLeft="-3dp"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@mipmap/energysword"
-        tools:layout_editor_absoluteY="348dp" />
+        tools:layout_editor_absoluteY="324dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <Button
+        android:id="@+id/covPage1Right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="183dp"
+        android:layout_marginStart="183dp"
+        android:text=">"
+        android:layout_below="@+id/beamrifle"
+        android:layout_alignLeft="@+id/energysword"
+        android:layout_alignStart="@+id/energysword"
+        android:layout_marginTop="152dp" />
 
 
 
