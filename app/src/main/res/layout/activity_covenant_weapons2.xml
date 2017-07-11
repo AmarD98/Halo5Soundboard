@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="amardhebardevelopments.halo5soundboard.CovenantWeaponsActivity2">
+
+    <ImageButton
+        android:id="@+id/plasmaCaster"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/plasmacaster"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/plasmaPistol"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/plasmapistol"
+        android:layout_below="@+id/plasmaCaster"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/fuelRod"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/plasmaPistol"
+        app:srcCompat="@mipmap/fuelrodcannon" />
+
+
+    <Button
+        android:id="@+id/covPage2Right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Next"
+        android:layout_below="@+id/fuelRod"
+        android:layout_alignLeft="@+id/fuelRod"
+        android:layout_alignStart="@+id/fuelRod" />
+
+    <Button
+        android:id="@+id/covPage2Left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/fuelRod"
+        android:layout_below="@+id/fuelRod"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Back" />
+
+</RelativeLayout>

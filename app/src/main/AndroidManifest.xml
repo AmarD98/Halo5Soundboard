@@ -23,7 +23,9 @@
         <activity android:name=".HumanWeaponsActivity2" />
         <activity android:name=".HumanWeaponsActivity3" />
         <activity android:name=".HumanWeaponsActivity4" />
-        <activity android:name=".HumanWeaponsActivity5"></activity>
+        <activity android:name=".HumanWeaponsActivity5" />
+        <activity android:name=".CovenantWeaponsActivity2" />
+        <activity android:name=".CovenantWeaponsActivity3"></activity>
     </application>
 
 </manifest>

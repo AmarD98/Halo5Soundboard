@@ -40,13 +40,11 @@
         android:id="@+id/covPage1Right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="183dp"
-        android:layout_marginStart="183dp"
-        android:text=">"
-        android:layout_below="@+id/beamrifle"
+        android:layout_marginLeft="200dp"
+        android:text="Forward"
+        android:layout_below="@+id/energysword"
         android:layout_alignLeft="@+id/energysword"
-        android:layout_alignStart="@+id/energysword"
-        android:layout_marginTop="152dp" />
+        android:layout_alignStart="@+id/energysword" />
 
 
 
