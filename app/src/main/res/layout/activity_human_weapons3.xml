@@ -10,10 +10,8 @@
         android:id="@+id/haloonepistol"
         android:layout_width="375dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="2dp"
         android:layout_marginTop="26dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
         app:srcCompat="@mipmap/haloonepistol" />
 
     <ImageButton
@@ -21,12 +19,10 @@
         android:layout_width="375dp"
         android:layout_height="150dp"
         app:srcCompat="@mipmap/railgun"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="174dp"
-        android:layout_below="@+id/haloonepistol"
-        android:layout_alignLeft="@+id/haloonepistol"
-        android:layout_alignStart="@+id/haloonepistol" />
-
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/haloonepistol" />
     <ImageButton
         android:id="@+id/shotgun"
         android:layout_width="375dp"
@@ -38,24 +34,22 @@
         android:id="@+id/page3right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="183dp"
-        android:layout_marginStart="183dp"
-        android:text=">"
-        android:layout_below="@+id/railgun"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Next"
+        android:layout_below="@+id/shotgun"
         android:layout_alignLeft="@+id/shotgun"
-        android:layout_alignStart="@+id/shotgun"
-        android:layout_marginTop="152dp" />
+        android:layout_alignStart="@+id/shotgun" />
 
     <Button
         android:id="@+id/page3left"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="<"
-        android:layout_marginRight="183dp"
-        android:layout_below="@+id/railgun"
-        android:layout_alignLeft="@+id/shotgun"
-        android:layout_alignStart="@+id/shotgun"
-        android:layout_marginTop="152dp" />
+        android:text="Back"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/shotgun"
+        android:layout_alignRight="@+id/shotgun" />
 
 
 </RelativeLayout>

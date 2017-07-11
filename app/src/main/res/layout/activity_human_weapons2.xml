@@ -11,53 +11,53 @@
         android:layout_width="375dp"
         android:layout_height="150dp"
         android:layout_marginTop="26dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="183dp"
         app:srcCompat="@mipmap/halo2battlerifle"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:id="@+id/magnum"
         android:layout_width="375dp"
         android:layout_height="150dp"
         app:srcCompat="@mipmap/magnum"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="157dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="346dp"
         android:layout_below="@+id/halo2battlerifle"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignLeft="@+id/halo2battlerifle"
+        android:layout_alignStart="@+id/halo2battlerifle" />
 
     <ImageButton
         android:id="@+id/smg"
         android:layout_width="375dp"
         android:layout_height="150dp"
         app:srcCompat="@mipmap/smg"
-        tools:layout_editor_absoluteY="324dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="346dp"
         android:layout_below="@+id/magnum"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignLeft="@+id/magnum"
+        android:layout_alignStart="@+id/magnum" />
 
     <Button
         android:id="@+id/page2right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="183dp"
-        android:layout_marginStart="183dp"
-        android:text=">"
-        android:layout_below="@+id/magnum"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Next"
+        android:layout_below="@+id/smg"
         android:layout_alignLeft="@+id/smg"
-        android:layout_alignStart="@+id/smg"
-        android:layout_marginTop="152dp" />
+        android:layout_alignStart="@+id/smg" />
 
     <Button
         android:id="@+id/page2left"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignLeft="@+id/smg"
-        android:layout_alignStart="@+id/smg"
-        android:layout_below="@+id/magnum"
-        android:layout_marginRight="183dp"
-        android:layout_marginTop="152dp"
-        android:text="<" />
+        android:layout_alignRight="@+id/smg"
+        android:layout_below="@+id/smg"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Back" />
 
 </RelativeLayout>

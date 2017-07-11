@@ -1,9 +1,11 @@
 package amardhebardevelopments.halo5soundboard;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class HumanWeaponsActivity3 extends AppCompatActivity {
@@ -41,8 +43,24 @@ public class HumanWeaponsActivity3 extends AppCompatActivity {
             }
         });
 
+        Button page3Right = (Button) findViewById(R.id.page3right);
+        Button page3Left = (Button) findViewById(R.id.page3left);
 
+        page3Right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goRight = new Intent(view.getContext(), HumanWeaponsActivity4.class);
+                startActivity(goRight);
+            }
+        });
 
+        page3Left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goLeft = new Intent(view.getContext(), HumanWeaponsActivity2.class);
+                startActivity(goLeft);
+            }
+        });
 
     }
 
