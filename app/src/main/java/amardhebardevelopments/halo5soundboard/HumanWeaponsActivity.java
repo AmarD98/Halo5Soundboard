@@ -17,10 +17,6 @@ public class HumanWeaponsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_human_weapon);
-        AdView adView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
-
 
         ImageButton assaultRifle = (ImageButton) findViewById(R.id.assaultrifle);
         ImageButton battleRifle = (ImageButton) (findViewById(R.id.battlerifle));
@@ -59,7 +55,9 @@ public class HumanWeaponsActivity extends AppCompatActivity {
             }
         });
 
-
+        AdView adView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
     }
 

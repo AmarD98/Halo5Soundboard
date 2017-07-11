@@ -20,5 +20,14 @@ public class WeaponsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button covWeapons = (Button) findViewById(R.id.covWeapons);
+        covWeapons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), CovenantWeaponsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

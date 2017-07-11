@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import static amardhebardevelopments.halo5soundboard.R.id.covPage2Left;
-import static amardhebardevelopments.halo5soundboard.R.id.covPage2Right;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class CovenantWeaponsActivity3 extends AppCompatActivity {
 
@@ -17,9 +17,14 @@ public class CovenantWeaponsActivity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_covenant_weapons3);
+
+        AdView adView = (AdView) findViewById(R.id.adView3);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
         ImageButton stormRifle = (ImageButton) findViewById(R.id.stormRifle);
         ImageButton needler = (ImageButton) findViewById(R.id.needler);
-        ImageButton brutePlasmaRifle = (ImageButton) findViewById(R.id.fuelRod);
+        ImageButton brutePlasmaRifle = (ImageButton) findViewById(R.id.brutePlasmaRifle);
 
         stormRifle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +50,6 @@ public class CovenantWeaponsActivity3 extends AppCompatActivity {
             }
         });
 
-        Button covPage3Right = (Button) findViewById(R.id.covPage3Right);
         Button covPage3Left = (Button) findViewById(R.id.covPage3Left);
 
         covPage3Left.setOnClickListener(new View.OnClickListener() {
@@ -56,13 +60,7 @@ public class CovenantWeaponsActivity3 extends AppCompatActivity {
             }
         });
 
-        covPage3Right.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent goRight = new Intent(view.getContext(), CovenantWeaponsActivity4.class);
-                startActivity(goRight);
-            }
-        });
+
 
     }
 }

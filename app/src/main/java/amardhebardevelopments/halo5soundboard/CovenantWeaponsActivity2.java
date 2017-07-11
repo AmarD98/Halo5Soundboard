@@ -8,12 +8,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class CovenantWeaponsActivity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_covenant_weapons2);
+
+        AdView adView = (AdView) findViewById(R.id.adView2);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         ImageButton plasmaCaster = (ImageButton) findViewById(R.id.plasmaCaster);
         ImageButton plasmaPistol = (ImageButton) findViewById(R.id.plasmaPistol);
