@@ -46,7 +46,7 @@ public class HumanWeaponsActivity5 extends AppCompatActivity {
         rocketpodLauncher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity5.this, R.raw.h5_saw_3);
+                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity5.this, R.raw.h5_turret_rocketpod_1);
                 mp.start();
             }
         });

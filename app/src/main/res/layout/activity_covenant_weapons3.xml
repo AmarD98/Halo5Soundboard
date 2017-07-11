@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="amardhebardevelopments.halo5soundboard.CovenantWeaponsActivity3">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/stormRifle"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/stormrifle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <ImageButton
+        android:id="@+id/needler"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/needler"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/stormRifle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/brutePlasmaRifle"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/needler"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/bruteplasmarifle" />
+
+
+
+    <Button
+        android:id="@+id/covPage3Right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Next"
+        android:layout_below="@+id/brutePlasmaRifle"
+        android:layout_alignLeft="@+id/brutePlasmaRifle"
+        android:layout_alignStart="@+id/brutePlasmaRifle" />
+
+    <Button
+        android:id="@+id/covPage3Left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/brutePlasmaRifle"
+        android:layout_below="@+id/brutePlasmaRifle"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Back" />
+
+
+</RelativeLayout>
