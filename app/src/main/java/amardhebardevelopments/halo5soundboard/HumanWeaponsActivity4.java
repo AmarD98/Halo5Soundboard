@@ -17,6 +17,11 @@ public class HumanWeaponsActivity4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_human_weapons4);
+
+        AdView adView = (AdView) findViewById(R.id.adView4);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
         ImageButton saw = (ImageButton) (findViewById(R.id.saw));
         ImageButton rocketLauncher = (ImageButton) (findViewById(R.id.rocketlauncher));
         ImageButton sniperRifle = (ImageButton) (findViewById(R.id.sniperrifle));
@@ -63,9 +68,6 @@ public class HumanWeaponsActivity4 extends AppCompatActivity {
             }
         });
 
-        AdView adView = (AdView) findViewById(R.id.adView4);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
 
     }
 }

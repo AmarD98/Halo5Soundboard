@@ -18,6 +18,11 @@ public class HumanWeaponsActivity5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_human_weapons5);
+
+        AdView adView = (AdView) findViewById(R.id.adView5);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
         ImageButton spartanLaser = (ImageButton) (findViewById(R.id.spartanlaser));
         ImageButton chaingunTurret = (ImageButton) (findViewById(R.id.chaingunturret));
         ImageButton rocketpodLauncher = (ImageButton) (findViewById(R.id.rocketpodlauncher));
@@ -55,9 +60,6 @@ public class HumanWeaponsActivity5 extends AppCompatActivity {
             }
         });
 
-        AdView adView = (AdView) findViewById(R.id.adView5);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
 
     }
 

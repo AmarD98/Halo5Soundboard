@@ -18,6 +18,11 @@ public class HumanWeaponsActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_human_weapons2);
+        AdView adView = (AdView) findViewById(R.id.adView2);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
+
         ImageButton halo2BattleRifle = (ImageButton)(findViewById(R.id.halo2battlerifle));
         ImageButton magnum = (ImageButton) (findViewById(R.id.magnum));
         ImageButton smg = (ImageButton) (findViewById(R.id.smg));
@@ -63,9 +68,6 @@ public class HumanWeaponsActivity2 extends AppCompatActivity {
             }
         });
 
-        AdView adView = (AdView) findViewById(R.id.adView2);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
 
     }
 
