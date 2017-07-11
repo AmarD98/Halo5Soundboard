@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class HumanWeaponsActivity3 extends AppCompatActivity {
 
 
@@ -61,6 +64,9 @@ public class HumanWeaponsActivity3 extends AppCompatActivity {
                 startActivity(goLeft);
             }
         });
+        AdView adView = (AdView) findViewById(R.id.adView3);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
     }
 
