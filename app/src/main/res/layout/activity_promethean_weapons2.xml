@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="amardhebardevelopments.halo5soundboard.PrometheanWeaponsActivity">
+    tools:context="amardhebardevelopments.halo5soundboard.PrometheanWeaponsActivity2">
 
     <ImageButton
-        android:id="@+id/lightRifle"
+        android:id="@+id/boltshot"
         android:layout_width="375dp"
         android:layout_height="150dp"
         android:layout_alignParentLeft="true"
@@ -15,43 +15,47 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
-        app:srcCompat="@mipmap/lightrifle" />
+        app:srcCompat="@mipmap/boltshot" />
 
     <ImageButton
-        android:id="@+id/scattershot"
+        android:id="@+id/binaryRifle"
         android:layout_width="375dp"
         android:layout_height="150dp"
-        android:layout_below="@+id/lightRifle"
+        android:layout_below="@+id/boltshot"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@mipmap/scattershot" />
+        app:srcCompat="@mipmap/binaryrifle" />
 
     <ImageButton
-        android:id="@+id/suppressor"
+        android:id="@+id/incinerationCannon"
         android:layout_width="375dp"
         android:layout_height="150dp"
-        app:srcCompat="@mipmap/suppressor"
-        android:layout_below="@+id/scattershot"
+        app:srcCompat="@mipmap/incinerationcannon"
+        android:layout_below="@+id/binaryRifle"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/promethPage1Right"
+        android:id="@+id/promethPage2Right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="200dp"
         android:layout_marginBottom="60dp"
         android:text="Next"
-        android:layout_below="@+id/suppressor"
-        android:layout_alignLeft="@+id/suppressor"
-        android:layout_alignStart="@+id/suppressor" />
+        android:layout_below="@+id/incinerationCannon"
+        android:layout_alignLeft="@+id/incinerationCannon"
+        android:layout_alignStart="@+id/incinerationCannon" />
 
     <Button
-        android:id="@+id/promethPage1Left"
+        android:id="@+id/promethPage2Left"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignRight="@+id/suppressor"
-        android:layout_below="@+id/suppressor"
+        android:layout_alignRight="@+id/incinerationCannon"
+        android:layout_below="@+id/incinerationCannon"
         android:layout_marginRight="200dp"
         android:layout_marginBottom="60dp"
         android:text="Back" />
+
+
+
+
 
 </RelativeLayout>
