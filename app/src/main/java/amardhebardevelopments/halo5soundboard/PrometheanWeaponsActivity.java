@@ -8,12 +8,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class PrometheanWeaponsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_promethean_weapons);
+
+
+        AdView adView = (AdView) findViewById(R.id.adViewPrometheanWeps1);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         ImageButton lightRifle = (ImageButton) (findViewById(R.id.lightRifle));
         ImageButton scattershot = (ImageButton) (findViewById(R.id.scattershot));

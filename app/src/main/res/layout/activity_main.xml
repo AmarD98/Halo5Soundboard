@@ -8,13 +8,13 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Weapons"
         android:layout_width="294dp"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_marginTop="12dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Weapons" />
 
     <ImageView
         android:id="@+id/imageView2"

@@ -55,13 +55,13 @@
         android:text="Back" />
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView4"
+        android:id="@+id/adViewHumanWep4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize = "BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:adUnitId="ca-app-pub-7075581824590120/7617695498"
         />
 
 </RelativeLayout>

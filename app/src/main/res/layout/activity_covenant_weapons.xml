@@ -38,6 +38,16 @@
 
 
     <Button
+        android:id="@+id/covPage1Left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/energysword"
+        android:layout_below="@+id/energysword"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Back" />
+
+    <Button
         android:id="@+id/covPage1Right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -48,13 +58,13 @@
         android:layout_alignStart="@+id/energysword" />
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/adViewCovenantWep1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize = "BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:adUnitId="ca-app-pub-7075581824590120/1571161896"
         />
 
 

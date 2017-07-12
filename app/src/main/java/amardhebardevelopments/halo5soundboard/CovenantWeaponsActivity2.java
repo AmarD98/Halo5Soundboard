@@ -18,7 +18,7 @@ public class CovenantWeaponsActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_covenant_weapons2);
 
-        AdView adView = (AdView) findViewById(R.id.adView2);
+        AdView adView = (AdView) findViewById(R.id.adViewCovenantWep2);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 

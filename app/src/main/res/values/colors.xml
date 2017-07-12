@@ -4,5 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="UNSC">#465e29</color>
-    <color name="Covenant">#269aff</color>
+    <color name="Covenant">#2663ff</color>
+    <color name="Promethean">#7a7370</color>
+    <color name="PrometheanOrange">#ff9807</color>
+    <color name="CovenantPurple">#380c55</color>
 </resources>

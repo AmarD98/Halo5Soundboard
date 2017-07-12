@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -17,6 +16,12 @@ public class HumanWeaponsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_human_weapon);
+
+
+        AdView adView = (AdView) findViewById(R.id.adViewHumanWep1);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
 
         ImageButton assaultRifle = (ImageButton) findViewById(R.id.assaultrifle);
         ImageButton battleRifle = (ImageButton) (findViewById(R.id.battlerifle));
@@ -46,6 +51,15 @@ public class HumanWeaponsActivity extends AppCompatActivity {
             }
         });
 
+        Button left = (Button) findViewById(R.id.page1left);
+        left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), WeaponsActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Button right = (Button)findViewById(R.id.page1right);
         right.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,9 +69,6 @@ public class HumanWeaponsActivity extends AppCompatActivity {
             }
         });
 
-        AdView adView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
 
     }
 

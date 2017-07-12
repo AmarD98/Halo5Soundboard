@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="amardhebardevelopments.halo5soundboard.PrometheanWeaponsActivity2">
@@ -33,16 +34,8 @@
         android:layout_below="@+id/binaryRifle"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/promethPage2Right"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="200dp"
-        android:layout_marginBottom="60dp"
-        android:text="Next"
-        android:layout_below="@+id/incinerationCannon"
-        android:layout_alignLeft="@+id/incinerationCannon"
-        android:layout_alignStart="@+id/incinerationCannon" />
+
+
 
     <Button
         android:id="@+id/promethPage2Left"
@@ -55,6 +48,15 @@
         android:text="Back" />
 
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize = "BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        />
 
 
 

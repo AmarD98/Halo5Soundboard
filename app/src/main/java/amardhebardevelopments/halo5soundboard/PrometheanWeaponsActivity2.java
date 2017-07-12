@@ -8,8 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import static amardhebardevelopments.halo5soundboard.R.id.boltshot;
-import static amardhebardevelopments.halo5soundboard.R.id.lightRifle;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 
 public class PrometheanWeaponsActivity2 extends AppCompatActivity {
 
@@ -18,7 +19,11 @@ public class PrometheanWeaponsActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promethean_weapons2);
 
+        AdView adView = (AdView) findViewById(R.id.adViewPrometheanWeps2);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
+        
         ImageButton boltshot = (ImageButton) (findViewById(R.id.boltshot));
         ImageButton binaryRifle = (ImageButton) (findViewById(R.id.binaryRifle));
         ImageButton incinerationCannon = (ImageButton) (findViewById(R.id.incinerationCannon));
@@ -56,17 +61,9 @@ public class PrometheanWeaponsActivity2 extends AppCompatActivity {
             }
         });
 
-        Button prometh2Right = (Button) findViewById(R.id.promethPage2Right);
-        prometh2Right.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent goRight = new Intent(view.getContext(), PrometheanWeaponsActivity3.class);
-                startActivity(goRight);
-            }
-        });
 
     }
 
 
-    }
 }
+

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,17 +9,54 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/humanWeapons"
-        android:layout_width="342dp"
+        android:id="@+id/covWeapons"
+        android:layout_width="375dp"
         android:layout_height="150dp"
-        android:backgroundTint="@color/UNSC"
-        android:text="Human Weapons" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/humanWeapons"
+        android:background="@color/CovenantPurple"
+        android:text="Covenant Weapons"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/Covenant"
+        android:textSize="30sp" />
 
     <Button
-        android:id="@+id/covWeapons"
-        android:layout_width="369dp"
+        android:id="@+id/humanWeapons"
+        android:layout_width="375dp"
         android:layout_height="150dp"
-        android:layout_weight="0.09"
-        android:background="@color/Covenant"
-        android:text="Covenant Weapons" />
-</LinearLayout>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@color/UNSC"
+        android:text="Human Weapons"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/promethWeapons"
+        style="@style/AppTheme"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/covWeapons"
+        android:layout_centerHorizontal="true"
+        android:background="@color/Promethean"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:text="Promethean Weapons"
+        android:textColor="@color/PrometheanOrange"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewPrometheanWeps2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize = "BANNER"
+        ads:adUnitId="ca-app-pub-7075581824590120/7478094691"
+        />
+
+
+</RelativeLayout>

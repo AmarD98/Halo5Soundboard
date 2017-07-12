@@ -19,7 +19,7 @@ public class HumanWeaponsActivity5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_human_weapons5);
 
-        AdView adView = (AdView) findViewById(R.id.adView5);
+        AdView adView = (AdView) findViewById(R.id.adViewHumanWep5);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 

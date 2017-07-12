@@ -44,6 +44,18 @@
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="346dp" />
 
+
+    <Button
+        android:id="@+id/page1left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/dmr"
+        android:layout_below="@+id/dmr"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Back" />
+
+
     <Button
         android:id="@+id/page1right"
         android:layout_width="match_parent"
@@ -56,13 +68,13 @@
         android:text="Next" />
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/adViewHumanWep1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize = "BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:adUnitId="ca-app-pub-7075581824590120/3453351098"
         />
 
 </RelativeLayout>

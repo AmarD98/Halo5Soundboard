@@ -18,7 +18,7 @@ public class CovenantWeaponsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_covenant_weapons);
 
-        AdView adView = (AdView) findViewById(R.id.adView);
+        AdView adView = (AdView) findViewById(R.id.adViewCovenantWep1);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 
@@ -56,6 +56,15 @@ public class CovenantWeaponsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent goRight = new Intent(view.getContext(), CovenantWeaponsActivity2.class);
                 startActivity(goRight);
+            }
+        });
+
+        Button covPage1Left = (Button) findViewById(R.id.covPage1Left);
+        covPage1Left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goLeft = new Intent(view.getContext(), WeaponsActivity.class);
+                startActivity(goLeft);
             }
         });
     }
