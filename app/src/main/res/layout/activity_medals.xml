@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="amardhebardevelopments.halo5soundboard.MedalsActivity">
@@ -23,9 +24,6 @@
         android:id="@+id/doubleKill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="11dp"
         app:srcCompat="@mipmap/doublekill"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -36,78 +34,89 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/triplekill"
-        android:layout_alignTop="@+id/doubleKill"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:id="@+id/overKill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+
+        app:srcCompat="@mipmap/overkill"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/tripleKill"
-        android:layout_marginTop="7dp"
-        app:srcCompat="@mipmap/overkill" />
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:id="@+id/killtacular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/doubleKill"
-        android:layout_alignStart="@+id/doubleKill"
-        android:layout_below="@+id/overKill"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@mipmap/killtacular" />
+        app:srcCompat="@mipmap/killtacular"
+
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/doubleKill"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:id="@+id/killtrocity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tripleKill"
-        android:layout_alignStart="@+id/tripleKill"
+
+        app:srcCompat="@mipmap/killtrocity"
         android:layout_alignTop="@+id/killtacular"
-        app:srcCompat="@mipmap/killtrocity" />
+        android:layout_alignLeft="@+id/tripleKill"
+        android:layout_alignStart="@+id/tripleKill" />
 
     <ImageButton
         android:id="@+id/killimanjaro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+
+        app:srcCompat="@mipmap/killimanjaro"
         android:layout_alignTop="@+id/killtrocity"
-        app:srcCompat="@mipmap/killimanjaro" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:id="@+id/killtastrophe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/killtacular"
-        android:layout_alignStart="@+id/killtacular"
-        android:layout_below="@+id/killtacular"
-        android:layout_marginTop="24dp"
-        app:srcCompat="@mipmap/killtastrophe" />
+
+        app:srcCompat="@mipmap/killtastrophe"
+        android:layout_alignTop="@+id/killpocalypse"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/killpocalypse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/killpocalypse"
-        android:layout_alignTop="@+id/killtastrophe"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/killtrocity"
         android:layout_alignLeft="@+id/killtrocity"
-        android:layout_alignStart="@+id/killtrocity"
-        android:layout_marginTop="8dp" />
+        android:layout_alignStart="@+id/killtrocity" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/killionaire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+
         app:srcCompat="@mipmap/killionaire"
-        android:layout_alignTop="@+id/imageButton8"
-        android:layout_toRightOf="@+id/imageButton8"
-        android:layout_toEndOf="@+id/imageButton8"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp" />
+        android:layout_alignTop="@+id/killpocalypse"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewMedalsPage1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize = "BANNER"
+        ads:adUnitId="ca-app-pub-7075581824590120/5669957491"
+        />
 
 
 </RelativeLayout>
