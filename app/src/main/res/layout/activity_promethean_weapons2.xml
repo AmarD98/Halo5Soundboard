@@ -7,6 +7,20 @@
     android:layout_height="match_parent"
     tools:context="amardhebardevelopments.halo5soundboard.PrometheanWeaponsActivity2">
 
+
+    <ImageView
+        android:id="@+id/haloBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/image"
+        android:scaleType="fitXY"/>
+
+
     <ImageButton
         android:id="@+id/boltshot"
         android:layout_width="375dp"

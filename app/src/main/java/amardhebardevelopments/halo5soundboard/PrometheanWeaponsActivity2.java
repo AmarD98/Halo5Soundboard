@@ -23,7 +23,7 @@ public class PrometheanWeaponsActivity2 extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 
-        
+
         ImageButton boltshot = (ImageButton) (findViewById(R.id.boltshot));
         ImageButton binaryRifle = (ImageButton) (findViewById(R.id.binaryRifle));
         ImageButton incinerationCannon = (ImageButton) (findViewById(R.id.incinerationCannon));

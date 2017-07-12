@@ -7,6 +7,18 @@
     android:layout_height="match_parent"
     tools:context="amardhebardevelopments.halo5soundboard.CovenantWeaponsActivity">
 
+    <ImageView
+        android:id="@+id/haloBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image" />
+
     <ImageButton
         android:id="@+id/carbine"
         android:layout_width="375dp"
