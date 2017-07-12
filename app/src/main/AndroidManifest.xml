@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".WeaponsActivity" />
         <activity android:name=".CovenantWeaponsActivity" />
-        <activity android:name=".ForerunnerWeaponsActivity" />
+        <activity android:name=".PrometheanWeaponsActivity" />
         <activity android:name=".HumanWeaponsActivity" />
         <activity android:name=".HumanWeaponsActivity2" />
         <activity android:name=".HumanWeaponsActivity3" />

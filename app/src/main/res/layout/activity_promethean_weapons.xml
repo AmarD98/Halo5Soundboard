@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="amardhebardevelopments.halo5soundboard.PrometheanWeaponsActivity">
+
+    <ImageButton
+        android:id="@+id/lightRifle"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        app:srcCompat="@mipmap/lightrifle" />
+
+    <ImageButton
+        android:id="@+id/scattershot"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/lightRifle"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/scattershot" />
+
+    <ImageButton
+        android:id="@+id/suppressor"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/suppressor"
+        android:layout_below="@+id/scattershot"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/promethPage1Right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Next"
+        android:layout_below="@+id/suppressor"
+        android:layout_alignLeft="@+id/suppressor"
+        android:layout_alignStart="@+id/suppressor" />
+
+    <Button
+        android:id="@+id/promethPage1Left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/suppressor"
+        android:layout_below="@+id/suppressor"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="Back" />
+
+
+
+
+
+
+</RelativeLayout>
