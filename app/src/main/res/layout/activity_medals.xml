@@ -102,7 +102,6 @@
         android:id="@+id/killionaire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         app:srcCompat="@mipmap/killionaire"
         android:layout_alignTop="@+id/killpocalypse"
         android:layout_alignParentRight="true"

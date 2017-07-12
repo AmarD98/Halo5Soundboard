@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context="amardhebardevelopments.halo5soundboard.MainActivity">
 
 
@@ -22,9 +23,34 @@
     <Button
         android:id="@+id/Weapons"
         android:layout_width="294dp"
-        android:layout_height="160dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="191dp"
+        android:background="@android:color/holo_blue_bright"
         android:text="Weapons"
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/medals"
+        android:layout_width="294dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Medals"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/Weapons"
+        android:layout_alignLeft="@+id/Weapons"
+        android:layout_alignStart="@+id/Weapons" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize = "BANNER"
+        ads:adUnitId="ca-app-pub-7075581824590120/4971953495"
+        />
+
+
 
 </RelativeLayout>
