@@ -21,16 +21,14 @@
         android:src="@drawable/image"
         android:scaleType="fitXY"/>
 
-
     <ImageButton
         android:id="@+id/plasmaCaster"
         android:layout_width="375dp"
         android:layout_height="150dp"
         app:srcCompat="@mipmap/plasmacaster"
         android:layout_marginTop="26dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
 
     <ImageButton
         android:id="@+id/plasmaPistol"
@@ -38,29 +36,28 @@
         android:layout_height="150dp"
         app:srcCompat="@mipmap/plasmapistol"
         android:layout_below="@+id/plasmaCaster"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:id="@+id/fuelRod"
         android:layout_width="375dp"
         android:layout_height="150dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/plasmaPistol"
         app:srcCompat="@mipmap/fuelrodcannon" />
-
 
     <Button
         android:id="@+id/covPage2Right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="200dp"
-        android:layout_marginBottom="60dp"
-        android:text="Next"
-        android:layout_below="@+id/fuelRod"
         android:layout_alignLeft="@+id/fuelRod"
-        android:layout_alignStart="@+id/fuelRod" />
+        android:layout_alignStart="@+id/fuelRod"
+        android:layout_below="@+id/fuelRod"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="200dp"
+        android:background="@color/CovenantPurple"
+        android:text="Next"
+        android:textColor="@color/Covenant" />
 
     <Button
         android:id="@+id/covPage2Left"
@@ -68,9 +65,11 @@
         android:layout_height="match_parent"
         android:layout_alignRight="@+id/fuelRod"
         android:layout_below="@+id/fuelRod"
-        android:layout_marginRight="200dp"
         android:layout_marginBottom="60dp"
-        android:text="Back" />
+        android:layout_marginRight="200dp"
+        android:background="@color/CovenantPurple"
+        android:text="Back"
+        android:textColor="@color/Covenant" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewCovenantWep2"
@@ -79,7 +78,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize = "BANNER"
-        ads:adUnitId="ca-app-pub-7075581824590120/3047895099"
-        />
+        ads:adUnitId="ca-app-pub-7075581824590120/3047895099" />
 
 </RelativeLayout>

@@ -16,10 +16,13 @@ public class PrometheanWeaponsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_promethean_weapons);
 
         AdView adView = (AdView) findViewById(R.id.adViewPrometheanWeps1);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
+                .build();
+
         adView.loadAd(adRequest);
 
         ImageButton lightRifle = (ImageButton) (findViewById(R.id.lightRifle));

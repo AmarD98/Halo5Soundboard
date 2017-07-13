@@ -27,9 +27,8 @@
         android:layout_width="375dp"
         android:layout_height="150dp"
         app:srcCompat="@mipmap/stormrifle"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginTop="26dp" />
 
     <ImageButton
@@ -38,9 +37,7 @@
         android:layout_height="150dp"
         app:srcCompat="@mipmap/needler"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/stormRifle"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@id/stormRifle" />
 
     <ImageButton
         android:id="@+id/brutePlasmaRifle"
@@ -50,16 +47,17 @@
         android:layout_centerHorizontal="true"
         app:srcCompat="@mipmap/bruteplasmarifle" />
 
-
     <Button
         android:id="@+id/covPage3Left"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignRight="@+id/brutePlasmaRifle"
         android:layout_below="@+id/brutePlasmaRifle"
-        android:layout_marginRight="200dp"
         android:layout_marginBottom="60dp"
-        android:text="Back" />
+        android:layout_marginRight="200dp"
+        android:background="@color/CovenantPurple"
+        android:text="Back"
+        android:textColor="@color/Covenant" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewCovenantWep3"

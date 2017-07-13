@@ -20,8 +20,9 @@ public class HumanWeaponsActivity5 extends AppCompatActivity {
         setContentView(R.layout.activity_human_weapons5);
 
         AdView adView = (AdView) findViewById(R.id.adViewHumanWep5);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
+                .build();        adView.loadAd(adRequest);
 
         ImageButton spartanLaser = (ImageButton) (findViewById(R.id.spartanlaser));
         ImageButton chaingunTurret = (ImageButton) (findViewById(R.id.chaingunturret));

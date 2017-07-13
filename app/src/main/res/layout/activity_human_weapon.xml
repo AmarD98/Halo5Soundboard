@@ -62,9 +62,11 @@
         android:layout_height="match_parent"
         android:layout_alignRight="@+id/dmr"
         android:layout_below="@+id/dmr"
-        android:layout_marginRight="200dp"
         android:layout_marginBottom="60dp"
-        android:text="Back" />
+        android:layout_marginRight="200dp"
+        android:background="@color/UNSC"
+        android:text="Back"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
 
     <Button
@@ -74,8 +76,9 @@
         android:layout_alignLeft="@+id/dmr"
         android:layout_alignStart="@+id/dmr"
         android:layout_below="@+id/dmr"
-        android:layout_marginLeft="200dp"
         android:layout_marginBottom="60dp"
+        android:layout_marginLeft="200dp"
+        android:background="@color/UNSC"
         android:text="Next" />
 
     <com.google.android.gms.ads.AdView

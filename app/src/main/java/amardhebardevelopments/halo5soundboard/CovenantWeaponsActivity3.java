@@ -18,7 +18,9 @@ public class CovenantWeaponsActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_covenant_weapons3);
 
         AdView adView = (AdView) findViewById(R.id.adViewCovenantWep3);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
+                .build();
         adView.loadAd(adRequest);
 
         ImageButton stormRifle = (ImageButton) findViewById(R.id.stormRifle);

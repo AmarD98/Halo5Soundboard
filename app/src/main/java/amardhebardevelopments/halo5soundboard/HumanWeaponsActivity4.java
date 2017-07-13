@@ -19,7 +19,9 @@ public class HumanWeaponsActivity4 extends AppCompatActivity {
         setContentView(R.layout.activity_human_weapons4);
 
         AdView adView = (AdView) findViewById(R.id.adViewHumanWep4);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
+                .build();
         adView.loadAd(adRequest);
 
         ImageButton saw = (ImageButton) (findViewById(R.id.saw));

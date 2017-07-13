@@ -17,7 +17,9 @@ public class MedalsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_medals);
 
         AdView adView = (AdView) findViewById(R.id.adViewMedalsPage1);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
+                .build();
         adView.loadAd(adRequest);
 
         ImageButton doubleKill = (ImageButton) findViewById(R.id.doubleKill);

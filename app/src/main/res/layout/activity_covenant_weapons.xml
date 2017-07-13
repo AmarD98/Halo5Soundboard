@@ -25,9 +25,8 @@
         android:layout_height="150dp"
         app:srcCompat="@mipmap/carbine"
         android:layout_marginTop="26dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
 
     <ImageButton
         android:id="@+id/beamrifle"
@@ -35,8 +34,7 @@
         android:layout_height="150dp"
         app:srcCompat="@mipmap/beamrifle"
         android:layout_below="@+id/carbine"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:id="@+id/energysword"
@@ -45,8 +43,7 @@
         android:layout_height="150dp"
         app:srcCompat="@mipmap/energysword"
         tools:layout_editor_absoluteY="324dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
 
 
     <Button
@@ -55,19 +52,24 @@
         android:layout_height="match_parent"
         android:layout_alignRight="@+id/energysword"
         android:layout_below="@+id/energysword"
-        android:layout_marginRight="200dp"
         android:layout_marginBottom="60dp"
-        android:text="Back" />
+        android:layout_marginRight="200dp"
+        android:background="@color/CovenantPurple"
+        android:text="Back"
+        android:textColor="@color/Covenant" />
 
     <Button
         android:id="@+id/covPage1Right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="200dp"
-        android:text="Forward"
-        android:layout_below="@+id/energysword"
         android:layout_alignLeft="@+id/energysword"
-        android:layout_alignStart="@+id/energysword" />
+        android:layout_alignStart="@+id/energysword"
+        android:layout_below="@+id/energysword"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="200dp"
+        android:background="@color/CovenantPurple"
+        android:text="Next"
+        android:textColor="@color/Covenant" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewCovenantWep1"

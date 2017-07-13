@@ -4,30 +4,48 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/halo5soundboardcover"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:screenOrientation="portrait"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            android:screenOrientation="portrait"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WeaponsActivity" />
-        <activity android:name=".CovenantWeaponsActivity" />
-        <activity android:name=".PrometheanWeaponsActivity" />
-        <activity android:name=".HumanWeaponsActivity" />
-        <activity android:name=".HumanWeaponsActivity2" />
-        <activity android:name=".HumanWeaponsActivity3" />
-        <activity android:name=".HumanWeaponsActivity4" />
-        <activity android:name=".HumanWeaponsActivity5" />
-        <activity android:name=".CovenantWeaponsActivity2" />
-        <activity android:name=".CovenantWeaponsActivity3" />
-        <activity android:name=".PrometheanWeaponsActivity2" />
-        <activity android:name=".MedalsActivity"></activity>
+        <activity android:name=".WeaponsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CovenantWeaponsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PrometheanWeaponsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HumanWeaponsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HumanWeaponsActivity2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HumanWeaponsActivity3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HumanWeaponsActivity4"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HumanWeaponsActivity5"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CovenantWeaponsActivity2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CovenantWeaponsActivity3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PrometheanWeaponsActivity2"
+            android:screenOrientation="portrait"/>
+        <activity android:name="MedalsActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,10 +18,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         AdView adView = (AdView) findViewById(R.id.adViewMainPage);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
+                .build();
         adView.loadAd(adRequest);
 
-        Button weapons = (Button) findViewById(R.id.button);
+
+        Button weapons = (Button) findViewById(R.id.weapons);
         weapons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

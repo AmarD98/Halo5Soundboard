@@ -61,12 +61,13 @@
         android:id="@+id/page2right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="200dp"
-        android:layout_marginBottom="60dp"
-        android:text="Next"
-        android:layout_below="@+id/smg"
         android:layout_alignLeft="@+id/smg"
-        android:layout_alignStart="@+id/smg" />
+        android:layout_alignStart="@+id/smg"
+        android:layout_below="@+id/smg"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="200dp"
+        android:background="@color/UNSC"
+        android:text="Next" />
 
     <Button
         android:id="@+id/page2left"
@@ -74,8 +75,9 @@
         android:layout_height="match_parent"
         android:layout_alignRight="@+id/smg"
         android:layout_below="@+id/smg"
-        android:layout_marginRight="200dp"
         android:layout_marginBottom="60dp"
+        android:layout_marginRight="200dp"
+        android:background="@color/UNSC"
         android:text="Back" />
 
     <com.google.android.gms.ads.AdView

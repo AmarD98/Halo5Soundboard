@@ -25,8 +25,6 @@
         android:id="@+id/lightRifle"
         android:layout_width="375dp"
         android:layout_height="150dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
@@ -52,12 +50,14 @@
         android:id="@+id/promethPage1Right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="200dp"
-        android:layout_marginBottom="60dp"
-        android:text="Next"
-        android:layout_below="@+id/suppressor"
         android:layout_alignLeft="@+id/suppressor"
-        android:layout_alignStart="@+id/suppressor" />
+        android:layout_alignStart="@+id/suppressor"
+        android:layout_below="@+id/suppressor"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="200dp"
+        android:background="@color/Promethean"
+        android:text="Next"
+        android:textColor="@color/PrometheanOrange" />
 
     <Button
         android:id="@+id/promethPage1Left"
@@ -65,9 +65,11 @@
         android:layout_height="match_parent"
         android:layout_alignRight="@+id/suppressor"
         android:layout_below="@+id/suppressor"
-        android:layout_marginRight="200dp"
         android:layout_marginBottom="60dp"
-        android:text="Back" />
+        android:layout_marginRight="200dp"
+        android:background="@color/Promethean"
+        android:text="Back"
+        android:textColor="@color/PrometheanOrange" />
 
 
     <com.google.android.gms.ads.AdView

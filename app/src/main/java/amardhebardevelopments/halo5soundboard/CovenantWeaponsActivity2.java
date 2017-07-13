@@ -19,7 +19,9 @@ public class CovenantWeaponsActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_covenant_weapons2);
 
         AdView adView = (AdView) findViewById(R.id.adViewCovenantWep2);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
+                .build();
         adView.loadAd(adRequest);
 
         ImageButton plasmaCaster = (ImageButton) findViewById(R.id.plasmaCaster);

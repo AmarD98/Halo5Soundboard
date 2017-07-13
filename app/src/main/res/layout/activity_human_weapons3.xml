@@ -48,26 +48,29 @@
         app:srcCompat="@mipmap/shotgun"
         android:layout_below="@+id/railgun"
         android:layout_centerHorizontal="true" />
+
     <Button
         android:id="@+id/page3right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="200dp"
-        android:layout_marginBottom="60dp"
-        android:text="Next"
-        android:layout_below="@+id/shotgun"
         android:layout_alignLeft="@+id/shotgun"
-        android:layout_alignStart="@+id/shotgun" />
+        android:layout_alignStart="@+id/shotgun"
+        android:layout_below="@+id/shotgun"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="200dp"
+        android:background="@color/UNSC"
+        android:text="Next" />
 
     <Button
         android:id="@+id/page3left"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Back"
-        android:layout_marginRight="200dp"
-        android:layout_marginBottom="60dp"
+        android:layout_alignRight="@+id/shotgun"
         android:layout_below="@+id/shotgun"
-        android:layout_alignRight="@+id/shotgun" />
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="200dp"
+        android:background="@color/UNSC"
+        android:text="Back" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewHumanWep3"
