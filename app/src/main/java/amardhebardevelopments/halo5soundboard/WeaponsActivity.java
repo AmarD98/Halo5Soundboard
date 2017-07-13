@@ -1,6 +1,7 @@
 package amardhebardevelopments.halo5soundboard;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,8 @@ import android.widget.Button;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+
+import static android.graphics.Color.BLACK;
 
 
 public class WeaponsActivity extends AppCompatActivity {
@@ -24,10 +27,10 @@ public class WeaponsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        actionBar.setBackgroundDrawable(new ColorDrawable(BLACK));
         AdView adView = (AdView) findViewById(R.id.adViewWeps);
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
+
                 .build();
         adView.loadAd(adRequest);
 

@@ -1,6 +1,8 @@
 package amardhebardevelopments.halo5soundboard;
 
+import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,8 @@ import android.widget.ImageButton;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+
+import static android.graphics.Color.BLACK;
 
 
 public class PrometheanWeaponsActivity2 extends AppCompatActivity {
@@ -21,10 +25,10 @@ public class PrometheanWeaponsActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promethean_weapons2);
-
+        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(BLACK));
         AdView adView = (AdView) findViewById(R.id.adViewPrometheanWeps2);
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
                 .build();
         adView.loadAd(adRequest);
 

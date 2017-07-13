@@ -1,6 +1,8 @@
 package amardhebardevelopments.halo5soundboard;
 
+import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -9,6 +11,8 @@ import android.widget.Button;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import static android.graphics.Color.BLACK;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,10 +20,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(BLACK));
         AdView adView = (AdView) findViewById(R.id.adViewMainPage);
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("B9F67AE6EA87F6D9C2361F8CB749E9CC")
+
                 .build();
         adView.loadAd(adRequest);
 
