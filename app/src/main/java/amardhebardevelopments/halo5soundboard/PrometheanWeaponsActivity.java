@@ -13,6 +13,8 @@ import com.google.android.gms.ads.AdView;
 
 public class PrometheanWeaponsActivity extends AppCompatActivity {
 
+    private MediaPlayer mp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,24 +34,33 @@ public class PrometheanWeaponsActivity extends AppCompatActivity {
         lightRifle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(PrometheanWeaponsActivity.this, R.raw.h5_light_reg_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(PrometheanWeaponsActivity.this, R.raw.h5_light_reg_1);
                 mp.start();
+                
             }
         });
 
         scattershot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(PrometheanWeaponsActivity.this, R.raw.h5_scattershot_3);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(PrometheanWeaponsActivity.this, R.raw.h5_scattershot_3);
                 mp.start();
+                
             }
         });
 
         suppressor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(PrometheanWeaponsActivity.this, R.raw.h5_suppressor_6);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(PrometheanWeaponsActivity.this, R.raw.h5_suppressor_6);
                 mp.start();
+                
             }
         });
 

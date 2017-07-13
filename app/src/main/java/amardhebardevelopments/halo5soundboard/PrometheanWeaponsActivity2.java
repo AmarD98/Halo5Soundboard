@@ -14,6 +14,9 @@ import com.google.android.gms.ads.AdView;
 
 public class PrometheanWeaponsActivity2 extends AppCompatActivity {
 
+
+    private MediaPlayer mp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,24 +36,33 @@ public class PrometheanWeaponsActivity2 extends AppCompatActivity {
         boltshot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(PrometheanWeaponsActivity2.this, R.raw.h5_boltshot_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(PrometheanWeaponsActivity2.this, R.raw.h5_boltshot_1);
                 mp.start();
+                
             }
         });
 
         binaryRifle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(PrometheanWeaponsActivity2.this, R.raw.h5_binary_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(PrometheanWeaponsActivity2.this, R.raw.h5_binary_1);
                 mp.start();
+                
             }
         });
 
         incinerationCannon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(PrometheanWeaponsActivity2.this, R.raw.h5_ic_alt_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(PrometheanWeaponsActivity2.this, R.raw.h5_ic_alt_1);
                 mp.start();
+                
             }
         });
 
@@ -62,7 +74,6 @@ public class PrometheanWeaponsActivity2 extends AppCompatActivity {
                 startActivity(goLeft);
             }
         });
-
 
     }
 

@@ -13,9 +13,12 @@ import com.google.android.gms.ads.AdView;
 
 public class CovenantWeaponsActivity extends AppCompatActivity {
 
+    MediaPlayer mp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_covenant_weapons);
 
         AdView adView = (AdView) findViewById(R.id.adViewCovenantWep1);
@@ -31,7 +34,9 @@ public class CovenantWeaponsActivity extends AppCompatActivity {
         carbine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity.this, R.raw.h5_carbine_3);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(CovenantWeaponsActivity.this, R.raw.h5_carbine_3);
                 mp.start();
             }
         });
@@ -39,16 +44,22 @@ public class CovenantWeaponsActivity extends AppCompatActivity {
         beamRifle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity.this, R.raw.h5_beam_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(CovenantWeaponsActivity.this, R.raw.h5_beam_1);
                 mp.start();
+                
             }
         });
 
         energySword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity.this, R.raw.h5_e_sword_swing_object_impact_3);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(CovenantWeaponsActivity.this, R.raw.h5_e_sword_swing_object_impact_3);
                 mp.start();
+                
             }
         });
 
@@ -69,5 +80,7 @@ public class CovenantWeaponsActivity extends AppCompatActivity {
                 startActivity(goLeft);
             }
         });
+
+
     }
 }

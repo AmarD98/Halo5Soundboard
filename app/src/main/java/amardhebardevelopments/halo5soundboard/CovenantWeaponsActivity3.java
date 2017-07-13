@@ -12,6 +12,8 @@ import com.google.android.gms.ads.AdView;
 
 public class CovenantWeaponsActivity3 extends AppCompatActivity {
 
+    private MediaPlayer mp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,24 +32,33 @@ public class CovenantWeaponsActivity3 extends AppCompatActivity {
         stormRifle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity3.this, R.raw.h5_storm_4);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(CovenantWeaponsActivity3.this, R.raw.h5_storm_4);
                 mp.start();
+
             }
         });
 
         needler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity3.this, R.raw.h5_needler_4);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(CovenantWeaponsActivity3.this, R.raw.h5_needler_4);
                 mp.start();
+                
             }
         });
 
         brutePlasmaRifle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity3.this, R.raw.h5_brute_plasma_rifle_4);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(CovenantWeaponsActivity3.this, R.raw.h5_brute_plasma_rifle_4);
                 mp.start();
+                
             }
         });
 

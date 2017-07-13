@@ -13,6 +13,7 @@ import com.google.android.gms.ads.AdView;
 
 public class HumanWeaponsActivity3 extends AppCompatActivity {
 
+    private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,24 +32,33 @@ public class HumanWeaponsActivity3 extends AppCompatActivity {
         halo1Pistol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity3.this, R.raw.h5_ce_pistol_fp_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(HumanWeaponsActivity3.this, R.raw.h5_ce_pistol_fp_1);
                 mp.start();
+                
             }
         });
 
         railgun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity3.this, R.raw.h5_railgun_2);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(HumanWeaponsActivity3.this, R.raw.h5_railgun_2);
                 mp.start();
+                
             }
         });
 
         shotgun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity3.this, R.raw.h5_shotgun_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(HumanWeaponsActivity3.this, R.raw.h5_shotgun_1);
                 mp.start();
+                
             }
         });
 

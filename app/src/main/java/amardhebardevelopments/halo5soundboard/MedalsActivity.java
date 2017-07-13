@@ -11,6 +11,7 @@ import com.google.android.gms.ads.AdView;
 
 public class MedalsActivity extends AppCompatActivity {
 
+    private MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +25,8 @@ public class MedalsActivity extends AppCompatActivity {
 
         ImageButton doubleKill = (ImageButton) findViewById(R.id.doubleKill);
         ImageButton tripleKill = (ImageButton) findViewById(R.id.tripleKill);
-        ImageButton overKill = (ImageButton) findViewById(R.id.overKill);
-        ImageButton killtacular = (ImageButton) findViewById(R.id.overKill);
+        ImageButton overKill = (ImageButton) findViewById(R.id.overkill);
+        ImageButton killtacular = (ImageButton) findViewById(R.id.killtacular);
         ImageButton killtrocity = (ImageButton) findViewById(R.id.killtrocity);
         ImageButton killimanjaro = (ImageButton) findViewById(R.id.killimanjaro);
         ImageButton killtastrophe = (ImageButton) findViewById(R.id.killtastrophe);
@@ -35,39 +36,53 @@ public class MedalsActivity extends AppCompatActivity {
         doubleKill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(MedalsActivity.this,  R.raw.doublekill);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(MedalsActivity.this,  R.raw.doublekill);
                 mp.start();
+                
             }
         });
 
         tripleKill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(MedalsActivity.this,  R.raw.triplekill);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(MedalsActivity.this,  R.raw.triplekill);
                 mp.start();
+                
             }
         });
 
         overKill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(MedalsActivity.this,  R.raw.overkill);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(MedalsActivity.this,  R.raw.overkill);
                 mp.start();
+                
             }
         });
 
         killtacular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killtacular);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killtacular);
                 mp.start();
+                
             }
         });
 
         killtrocity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killtrocity);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killtrocity);
                 mp.start();
             }
         });
@@ -75,7 +90,9 @@ public class MedalsActivity extends AppCompatActivity {
         killimanjaro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killimanjaro);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killimanjaro);
                 mp.start();
             }
         });
@@ -83,7 +100,9 @@ public class MedalsActivity extends AppCompatActivity {
         killtastrophe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killtastrophe);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killtastrophe);
                 mp.start();
             }
         });
@@ -91,7 +110,9 @@ public class MedalsActivity extends AppCompatActivity {
         killpocalypse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killpocalypse);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killpocalypse);
                 mp.start();
             }
         });
@@ -99,7 +120,9 @@ public class MedalsActivity extends AppCompatActivity {
         killionaire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killionaire);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(MedalsActivity.this,  R.raw.killionaire);
                 mp.start();
             }
         });

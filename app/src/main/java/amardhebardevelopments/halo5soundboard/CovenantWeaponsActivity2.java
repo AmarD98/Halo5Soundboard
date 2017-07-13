@@ -13,6 +13,8 @@ import com.google.android.gms.ads.AdView;
 
 public class CovenantWeaponsActivity2 extends AppCompatActivity {
 
+    private MediaPlayer mp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,24 +33,33 @@ public class CovenantWeaponsActivity2 extends AppCompatActivity {
         plasmaCaster.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity2.this, R.raw.h5_p_caster_reg_2);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(CovenantWeaponsActivity2.this, R.raw.h5_p_caster_reg_2);
                 mp.start();
+                
             }
         });
 
         plasmaPistol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity2.this, R.raw.h5_p_pistol_reg_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(CovenantWeaponsActivity2.this, R.raw.h5_p_pistol_reg_1);
                 mp.start();
+                
             }
         });
 
         fuelRodCannon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(CovenantWeaponsActivity2.this, R.raw.h5_fuel_rod_2);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(CovenantWeaponsActivity2.this, R.raw.h5_fuel_rod_2);
                 mp.start();
+                
             }
         });
 

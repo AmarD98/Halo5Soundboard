@@ -14,6 +14,8 @@ import com.google.android.gms.ads.AdView;
 public class HumanWeaponsActivity5 extends AppCompatActivity {
 
 
+    private MediaPlayer mp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,24 +33,33 @@ public class HumanWeaponsActivity5 extends AppCompatActivity {
         spartanLaser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity5.this, R.raw.h5_laser_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(HumanWeaponsActivity5.this, R.raw.h5_laser_1);
                 mp.start();
+                
             }
         });
 
         chaingunTurret.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity5.this, R.raw.h5_turret_human_7);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(HumanWeaponsActivity5.this, R.raw.h5_turret_human_7);
                 mp.start();
+                
             }
         });
 
         rocketpodLauncher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mp = MediaPlayer.create(HumanWeaponsActivity5.this, R.raw.h5_turret_rocketpod_1);
+                if(mp != null)
+                    mp.release();
+                mp = MediaPlayer.create(HumanWeaponsActivity5.this, R.raw.h5_turret_rocketpod_1);
                 mp.start();
+                
             }
         });
 
